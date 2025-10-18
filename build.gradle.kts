@@ -65,7 +65,7 @@ cloche {
         }
     }
 
-    fabric("fabric:1.21.9") {
+    fabric("fabric:1.21.10") {
         loaderVersion = "0.17.2"
         minecraftVersion = "1.21.9"
 
@@ -96,7 +96,7 @@ cloche {
         }
     }
 
-    neoforge("neoforge:1.21.9") {
+    neoforge("neoforge:1.21.10") {
         loaderVersion = "21.9.1-beta"
         minecraftVersion = "1.21.9"
 
