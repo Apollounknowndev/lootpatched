@@ -27,8 +27,8 @@ cloche {
     }
 
     metadata {
-        modId = "lootpatched"
-        name = "Lootpatched"
+        modId = "datapatched"
+        name = "Datapatched"
         description = "A library mod with a simple cross-loader loot modifier format."
         license = "MIT"
         icon = "pack.png"
@@ -37,7 +37,7 @@ cloche {
     }
 
     common {
-        mixins.from(file("src/common/main/lootpatched.mixins.json"))
+        mixins.from(file("src/common/main/datapatched.mixins.json"))
 
         dependencies {
             compileOnly("org.spongepowered:mixin:0.8.3")
@@ -60,7 +60,7 @@ cloche {
 
         metadata {
             entrypoint("main") {
-                value = "dev.worldgen.lootpatched.impl.LootpatchedEntrypoint"
+                value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
         }
     }
@@ -81,7 +81,7 @@ cloche {
 
         metadata {
             entrypoint("main") {
-                value = "dev.worldgen.lootpatched.impl.LootpatchedEntrypoint"
+                value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
         }
     }

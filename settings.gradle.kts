@@ -1,4 +1,4 @@
-rootProject.name = "lootpatched"
+rootProject.name = "datapatched"
 
 pluginManagement {
     repositories {

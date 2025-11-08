@@ -4,7 +4,7 @@ import json
 
 # Per-mod: Update this for each mod!!!
 
-MOD_ID = "lootpatched"
+MOD_ID = "datapatched"
 MOD_VERSION = "1.0.0"
 CHANGELOG = """
 Initial release.
