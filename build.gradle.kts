@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.0"
-    id("earth.terrarium.cloche") version "0.13.6"
+    id("earth.terrarium.cloche") version "0.16.10"
 }
 
 repositories {
@@ -42,11 +42,19 @@ cloche {
         dependencies {
             compileOnly("org.spongepowered:mixin:0.8.3")
         }
+
+        data()
     }
 
+    val shared1211 = common("shared:1.21.1")
+    val shared12110 = common("shared:1.21.10")
+
     fabric("fabric:1.21.1") {
+        dependsOn(shared1211)
+
         loaderVersion = "0.17.0"
         minecraftVersion = "1.21.1"
+        datagenDirectory = file("src/common/main")
 
         dependencies {
             fabricApi("0.116.1")
@@ -56,18 +64,26 @@ cloche {
         runs {
             client()
             server()
+            data()
         }
+        data()
 
         metadata {
             entrypoint("main") {
                 value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
+            entrypoint("fabric-datagen") {
+                value = "dev.worldgen.datapatched.data.DatapatchedDatagen"
+            }
         }
     }
 
     fabric("fabric:1.21.10") {
+        dependsOn(shared12110)
+
         loaderVersion = "0.17.2"
         minecraftVersion = "1.21.9"
+        datagenDirectory = file("src/common/main/overlay")
 
         dependencies {
             fabricApi("0.134.0")
@@ -77,16 +93,23 @@ cloche {
         runs {
             client()
             server()
+            data()
         }
+        data()
 
         metadata {
             entrypoint("main") {
                 value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
+            entrypoint("fabric-datagen") {
+                value = "dev.worldgen.datapatched.data.DatapatchedDatagen"
+            }
         }
     }
 
     neoforge("neoforge:1.21.1") {
+        dependsOn(shared1211)
+
         loaderVersion = "21.1.206"
         minecraftVersion = "1.21.1"
 
@@ -97,6 +120,8 @@ cloche {
     }
 
     neoforge("neoforge:1.21.10") {
+        dependsOn(shared12110)
+
         loaderVersion = "21.9.1-beta"
         minecraftVersion = "1.21.9"
 
