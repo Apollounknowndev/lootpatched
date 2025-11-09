@@ -12,29 +12,16 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.item.trading.MerchantOffer;
 
 public record Group(HolderSet<TradeOffer> trades) implements TradeOffer {
-    public static final MapCodec<Group> CODEC;
+    public static final MapCodec<Group> CODEC = TradeOffer.LIST_CODEC.fieldOf("trades").xmap(Group::new, Group::trades);
 
-    public Group(HolderSet<TradeOffer> trades) {
-        this.trades = trades;
-    }
-
+    @Override
     public List<MerchantOffer> create(AbstractVillager merchant, RandomSource random) {
-        List<MerchantOffer> offers = new ArrayList();
-        Stream var10000 = this.trades.stream().map((entry) -> ((TradeOffer)entry.value()).create(merchant, random));
-        Objects.requireNonNull(offers);
-        var10000.forEach(offers::addAll);
+        List<MerchantOffer> offers = new ArrayList<>();
+        this.trades.stream().map(entry -> entry.value().create(merchant, random)).forEach(offers::addAll);
         return offers;
     }
 
     public MapCodec<? extends TradeOffer> codec() {
         return CODEC;
-    }
-
-    public HolderSet<TradeOffer> trades() {
-        return this.trades;
-    }
-
-    static {
-        CODEC = TradeOffer.LIST_CODEC.fieldOf("trades").xmap(Group::new, Group::trades);
     }
 }

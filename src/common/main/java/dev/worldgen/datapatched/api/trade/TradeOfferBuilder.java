@@ -8,9 +8,6 @@ import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.level.ItemLike;
 
 public class TradeOfferBuilder {
-    public TradeOfferBuilder() {
-    }
-
     public static TradeOffer itemsForEmeralds(ItemLike selling, int buyingCount, int sellingCount, int maxUses) {
         return itemsForEmeralds(new ItemStack(selling, sellingCount), buyingCount, sellingCount, maxUses);
     }

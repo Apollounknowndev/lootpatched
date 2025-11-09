@@ -14,7 +14,7 @@ public interface LootModifier {
 
     CommonData commonData();
 
-    void apply(LootTable var1, ResourceLocation var2);
+    void apply(LootTable table, ResourceLocation key);
 
     MapCodec<? extends LootModifier> codec();
 

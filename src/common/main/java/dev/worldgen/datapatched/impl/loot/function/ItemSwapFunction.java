@@ -19,8 +19,10 @@ import net.minecraft.world.level.storage.loot.functions.LootItemFunctionType;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 
 public final class ItemSwapFunction extends LootItemConditionalFunction {
-    public static final MapCodec<ItemSwapFunction> CODEC = RecordCodecBuilder.mapCodec((instance) -> commonFields(instance).and(Codec.unboundedMap(ResourceKey.codec(Registries.ITEM), ResourceKey.codec(Registries.ITEM)).fieldOf("items").forGetter(ItemSwapFunction::items)).apply(instance, ItemSwapFunction::new));
-    public static final LootItemFunctionType<ItemSwapFunction> TYPE;
+    public static final MapCodec<ItemSwapFunction> CODEC = RecordCodecBuilder.mapCodec(instance -> commonFields(instance).and(
+        Codec.unboundedMap(ResourceKey.codec(Registries.ITEM), ResourceKey.codec(Registries.ITEM)).fieldOf("items").forGetter(ItemSwapFunction::items)
+    ).apply(instance, ItemSwapFunction::new));
+    public static final LootItemFunctionType<ItemSwapFunction> TYPE = new LootItemFunctionType<>(CODEC);
     private final Map<ResourceKey<Item>, ResourceKey<Item>> items;
 
     public ItemSwapFunction(List<LootItemCondition> conditions, Map<ResourceKey<Item>, ResourceKey<Item>> items) {
@@ -34,11 +36,11 @@ public final class ItemSwapFunction extends LootItemConditionalFunction {
 
     public ItemStack run(ItemStack stack, LootContext context) {
         HolderLookup.RegistryLookup<Item> registry = context.getLevel().registryAccess().lookupOrThrow(Registries.ITEM);
-        ResourceKey<Item> key = (ResourceKey)stack.getItemHolder().unwrapKey().get();
+        ResourceKey<Item> key = stack.getItemHolder().unwrapKey().get();
         if (this.items.containsKey(key)) {
-            Optional<Holder.Reference<Item>> value = registry.get((ResourceKey)this.items.get(key));
+            Optional<Holder.Reference<Item>> value = registry.get(this.items.get(key));
             if (value.isPresent()) {
-                return stack.transmuteCopy((ItemLike)((Holder.Reference)value.get()).value());
+                return stack.transmuteCopy(value.get().value());
             }
         }
 
@@ -47,9 +49,5 @@ public final class ItemSwapFunction extends LootItemConditionalFunction {
 
     public Map<ResourceKey<Item>, ResourceKey<Item>> items() {
         return this.items;
-    }
-
-    static {
-        TYPE = new LootItemFunctionType(CODEC);
     }
 }

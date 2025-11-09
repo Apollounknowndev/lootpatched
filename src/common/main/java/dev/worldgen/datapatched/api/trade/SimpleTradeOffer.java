@@ -27,24 +27,6 @@ public interface SimpleTradeOffer extends TradeOffer {
         }
     }
 
-    public static record ItemTrade(ItemCost buying, Optional<ItemCost> buyingSecondary, ItemStack selling) {
-        public ItemTrade(ItemCost buying, Optional<ItemCost> buyingSecondary, ItemStack selling) {
-            this.buying = buying;
-            this.buyingSecondary = buyingSecondary;
-            this.selling = selling;
-        }
-
-        public ItemCost buying() {
-            return this.buying;
-        }
-
-        public Optional<ItemCost> buyingSecondary() {
-            return this.buyingSecondary;
-        }
-
-        public ItemStack selling() {
-            return this.selling;
-        }
-    }
+    record ItemTrade(ItemCost buying, Optional<ItemCost> buyingSecondary, ItemStack selling) { }
 }
 

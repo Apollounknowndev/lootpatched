@@ -4,65 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Renamed to Datapatched">
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/api/trade/TradeOfferActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/impl/trade/TradeHelperActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/api/trade/TradeOfferActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/impl/trade/TradeHelperActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/api/trade/TradeOfferActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/impl/trade/TradeHelperActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/api/trade/TradeOfferActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedActual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/impl/trade/TradeHelperActual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Almost lost hours of progress, no taking chances again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/datapatched.mixins.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/DatapatchedRegistries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/loot/LootModifier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/Datapatched.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/DiscardFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/ItemSwapFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddEntries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddPools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/ApplyFunction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/CommonData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/mixin/loot/LootPoolAccessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/mixin/loot/LootTableAccessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/mixin/loot/ReloadableServerRegistriesMixin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/resources/pack.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/resources/pack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neoforge/1.21.1/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/api/DatapatchedBuiltInRegistriesActual.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/neoforge/1.21.10/main/java/dev/worldgen/datapatched/impl/DatapatchedEntrypoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/loot/LootModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/loot/LootModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/SimpleTradeOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/SimpleTradeOffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/DiscardFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/DiscardFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/ItemSwapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/ItemSwapFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddEntries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddPools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddPools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/ApplyFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/ApplyFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/CommonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/CommonData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Condition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Group.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,55 +54,63 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Apollounknowndev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Apollounknowndev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Apollounknowndev/lootpatched.git",
-    "accountId": "7891143c-883a-4944-b9fb-b68c3c023df8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Apollounknowndev/lootpatched.git&quot;,
+    &quot;accountId&quot;: &quot;7891143c-883a-4944-b9fb-b68c3c023df8&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="35DHGuawledi96XCMDhyhQLOoDS" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotClient.main()].executor": "Run",
-    "Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotServer.main()].executor": "Run",
-    "Gradle.lootpatched [prepareFabric12110ClientRun].executor": "Run",
-    "Gradle.lootpatched [prepareFabric12110DataRun].executor": "Run",
-    "Gradle.lootpatched [prepareFabric1211DataRun].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "external.system.has.shared.sources": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ldglo/Documents/Github/lootpatched/src/fabric/1.21.10/data"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotClient.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [prepareFabric12110ClientRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [prepareFabric12110DataRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [prepareFabric1211DataRun].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;external.system.has.shared.sources&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldglo/Documents/Github/lootpatched/src/common/main/java/dev/worldgen/datapatched/impl/loot&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main\java\dev\worldgen\datapatched\impl\loot" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main\java\dev\worldgen\datapatched\api" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main" />
       <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10\data" />
       <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dev.worldgen.datapatched.impl.trade.offer" />
-      <recent name="dev.worldgen.datapatched.data" />
+      <recent name="dev.worldgen.datapatched.impl.loot.modifier" />
+      <recent name="dev.worldgen.datapatched.impl.loot.function" />
+      <recent name="dev.worldgen.datapatched.mixin.trade" />
+      <recent name="dev.worldgen.datapatched.mixin.loot" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Run :fabric:1.21.10:data">
@@ -279,6 +244,35 @@
       <option name="presentableId" value="Default" />
       <updated>1762637631169</updated>
     </task>
+    <task id="LOCAL-00001" summary="Almost lost hours of progress, no taking chances again">
+      <option name="closed" value="true" />
+      <created>1762649308268</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762649308268</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Almost lost hours of progress, no taking chances again">
+      <option name="closed" value="true" />
+      <created>1762649313240</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762649313240</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Almost lost hours of progress, no taking chances again">
+      <option name="closed" value="true" />
+      <created>1762649318163</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762649318163</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Almost lost hours of progress, no taking chances again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost lost hours of progress, no taking chances again" />
   </component>
 </project>

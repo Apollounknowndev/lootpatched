@@ -14,27 +14,14 @@ import net.minecraft.world.level.storage.loot.functions.LootItemFunctions;
 public record ApplyFunction(CommonData commonData, LootItemFunction function) implements LootModifier {
     public static final MapCodec<ApplyFunction> CODEC = RecordCodecBuilder.mapCodec((instance) -> instance.group(CommonData.codec(2000).forGetter(ApplyFunction::commonData), LootItemFunctions.ROOT_CODEC.fieldOf("function").forGetter(ApplyFunction::function)).apply(instance, ApplyFunction::new));
 
-    public ApplyFunction(CommonData commonData, LootItemFunction function) {
-        this.commonData = commonData;
-        this.function = function;
-    }
-
     public void apply(LootTable table, ResourceLocation key) {
         LootTableAccessor accessor = this.accessor(table);
-        List<LootItemFunction> fullFunctions = ImmutableList.builder().addAll(accessor.datapatched$getFunctions()).add(this.function).build();
+        List<LootItemFunction> fullFunctions = ImmutableList.<LootItemFunction>builder().addAll(accessor.datapatched$getFunctions()).add(this.function).build();
         accessor.datapatched$setFunctions(fullFunctions);
         accessor.datapatched$setCompositeFunction(LootItemFunctions.compose(fullFunctions));
     }
 
     public MapCodec<? extends LootModifier> codec() {
         return CODEC;
-    }
-
-    public CommonData commonData() {
-        return this.commonData;
-    }
-
-    public LootItemFunction function() {
-        return this.function;
     }
 }

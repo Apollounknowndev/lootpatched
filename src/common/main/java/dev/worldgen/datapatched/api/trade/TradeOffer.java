@@ -27,7 +27,7 @@ import net.msrandom.multiplatform.annotations.Expect;
 public interface TradeOffer {
     Codec<TradeOffer> CODEC = DatapatchedBuiltInRegistries.TRADE_OFFER_TYPE.byNameCodec().dispatch(TradeOffer::codec, Function.identity());
     Codec<Holder<TradeOffer>> ENTRY_CODEC = RegistryFileCodec.create(DatapatchedRegistries.TRADE_OFFER, CODEC);
-    Codec<HolderSet<TradeOffer>> LIST_CODEC = RegistryCodecs.homogeneousList(DatapatchedRegistries.TRADE_OFFER, CODEC);
+    Codec<HolderSet<TradeOffer>> LIST_CODEC = RegistryCodecs.homogeneousList(DatapatchedRegistries.TRADE_OFFER, CODEC, false);
     Codec<ItemCost> BUYING_CODEC = Codec.withAlternative(ItemCost.CODEC, ItemStack.SIMPLE_ITEM_CODEC, (item) -> new ItemCost(item.getItem()));
     Codec<ItemStack> SELLING_CODEC = Codec.withAlternative(ItemStack.CODEC, ItemStack.SIMPLE_ITEM_CODEC, (t) -> t);
     Holder<TradeOffer> EMPTY = Holder.direct(new Empty());

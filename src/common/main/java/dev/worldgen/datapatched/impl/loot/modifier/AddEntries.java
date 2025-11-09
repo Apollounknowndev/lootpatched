@@ -13,19 +13,16 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntries;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 
 public record AddEntries(CommonData commonData, List<LootPoolEntryContainer> entries) implements LootModifier {
-    public static final MapCodec<AddEntries> CODEC = RecordCodecBuilder.mapCodec((instance) -> instance.group(CommonData.codec(0).forGetter(AddEntries::commonData), LootPoolEntries.CODEC.listOf().fieldOf("entries").forGetter(AddEntries::entries)).apply(instance, AddEntries::new));
-
-    public AddEntries(CommonData commonData, List<LootPoolEntryContainer> entries) {
-        this.commonData = commonData;
-        this.entries = entries;
-    }
+    public static final MapCodec<AddEntries> CODEC = RecordCodecBuilder.mapCodec(instance -> instance.group(
+        CommonData.codec(0).forGetter(AddEntries::commonData),
+        LootPoolEntries.CODEC.listOf().fieldOf("entries").forGetter(AddEntries::entries)
+    ).apply(instance, AddEntries::new));
 
     public void apply(LootTable table, ResourceLocation key) {
         for(LootPool pool : this.accessor(table).datapatched$getPools()) {
-            ImmutableList<LootPoolEntryContainer> baseEntries = ImmutableList.builder().addAll(accessor(pool).datapatched$getEntries()).addAll(this.entries).build();
+            ImmutableList<LootPoolEntryContainer> baseEntries = ImmutableList.<LootPoolEntryContainer>builder().addAll(accessor(pool).datapatched$getEntries()).addAll(this.entries).build();
             accessor(pool).datapatched$setEntries(baseEntries);
         }
-
     }
 
     private static LootPoolAccessor accessor(LootPool pool) {
@@ -34,13 +31,5 @@ public record AddEntries(CommonData commonData, List<LootPoolEntryContainer> ent
 
     public MapCodec<? extends LootModifier> codec() {
         return CODEC;
-    }
-
-    public CommonData commonData() {
-        return this.commonData;
-    }
-
-    public List<LootPoolEntryContainer> entries() {
-        return this.entries;
     }
 }
