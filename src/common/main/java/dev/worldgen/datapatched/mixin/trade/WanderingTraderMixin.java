@@ -19,15 +19,14 @@ public abstract class WanderingTraderMixin {
             cancellable = true
     )
     private void sellcraft$injectSellcraftTrades(CallbackInfo ci) {
-        WanderingTrader $this = (WanderingTrader)this;
+        WanderingTrader $this = (WanderingTrader) (Object) this;
         Optional<TradeOfferProvider> tradeProvider = TradeOfferProvider.getProvider($this.registryAccess(), Datapatched.id("wandering_trader"));
         if (tradeProvider.isPresent()) {
-            for(TradeOfferProvider.TradeTier tradeTier : ((TradeOfferProvider)tradeProvider.get()).tiers()) {
+            for(TradeOfferProvider.TradeTier tradeTier : tradeProvider.get().tiers()) {
                 TradeHelper.addDatapatchedTrades($this, $this.getOffers(), tradeTier);
             }
 
             ci.cancel();
         }
-
     }
 }

@@ -14,15 +14,15 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin({Villager.class})
+@Mixin(Villager.class)
 public abstract class VillagerMixin {
     @Inject(
-            at = {@At("HEAD")},
-            method = {"updateTrades"},
-            cancellable = true
+        at = {@At("HEAD")},
+        method = {"updateTrades"},
+        cancellable = true
     )
     private void sellcraft$injectSellcraftTrades(CallbackInfo ci) {
-        Villager $this = (Villager)this;
+        Villager $this = (Villager) (Object) this;
         VillagerData data = $this.getVillagerData();
         ResourceLocation id = TradeHelper.getProfession(data);
         if (id.getNamespace().equals("minecraft")) {
@@ -32,8 +32,8 @@ public abstract class VillagerMixin {
         ResourceKey<VillagerProfession> profession = ResourceKey.create(Registries.VILLAGER_PROFESSION, id);
         Optional<TradeOfferProvider> tradeProvider = TradeOfferProvider.getProvider($this.registryAccess(), profession.location());
         int level = TradeHelper.getLevel(data);
-        if (tradeProvider.isPresent() && level <= ((TradeOfferProvider)tradeProvider.get()).tiers().size()) {
-            TradeOfferProvider.TradeTier tradeTier = (TradeOfferProvider.TradeTier)((TradeOfferProvider)tradeProvider.get()).tiers().get(level - 1);
+        if (tradeProvider.isPresent() && level <= tradeProvider.get().tiers().size()) {
+            TradeOfferProvider.TradeTier tradeTier = tradeProvider.get().tiers().get(level - 1);
             TradeHelper.addDatapatchedTrades($this, $this.getOffers(), tradeTier);
             ci.cancel();
         }
