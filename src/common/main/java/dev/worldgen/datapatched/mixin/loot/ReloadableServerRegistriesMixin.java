@@ -25,7 +25,6 @@ import java.util.Comparator;
 import java.util.Optional;
 
 @Mixin(ReloadableServerRegistries.class)
-@Debug(export = true)
 public class ReloadableServerRegistriesMixin {
     @ModifyReturnValue(
         method = {

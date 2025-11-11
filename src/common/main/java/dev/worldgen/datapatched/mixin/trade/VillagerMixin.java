@@ -17,8 +17,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Villager.class)
 public abstract class VillagerMixin {
     @Inject(
-        at = {@At("HEAD")},
-        method = {"updateTrades"},
+        at = @At("HEAD"),
+        method = "updateTrades",
         cancellable = true
     )
     private void sellcraft$injectSellcraftTrades(CallbackInfo ci) {

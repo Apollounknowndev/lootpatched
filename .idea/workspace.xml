@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Some more fixes">
-      <change afterPath="$PROJECT_DIR$/src/common/main/resources/pack.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseTagsProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/datapatched_datagen.mixins.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/mixin/HashCacheMixin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayDatapatchedDatagen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/data/mixin/HashCacheMixin.java" afterDir="false" />
+    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Wandering traders data-driven">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/TradeHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/TradeHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseDatapatchedDatagen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseRegistriesProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferProviderBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/WanderingTraderOffers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayRegistriesProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayTagsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferProviderBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/offer/WanderingTraderOffers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,11 +296,20 @@
       <option name="project" value="LOCAL" />
       <updated>1762649318163</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Wandering traders data-driven">
+      <option name="closed" value="true" />
+      <created>1762824715756</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762824715756</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Almost lost hours of progress, no taking chances again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost lost hours of progress, no taking chances again" />
+    <MESSAGE value="Wandering traders data-driven" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wandering traders data-driven" />
   </component>
 </project>

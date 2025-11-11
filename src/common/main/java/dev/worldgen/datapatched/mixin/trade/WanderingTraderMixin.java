@@ -10,13 +10,13 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin({WanderingTrader.class})
+@Mixin(WanderingTrader.class)
 public abstract class WanderingTraderMixin {
 
     @Inject(
-            at = {@At("HEAD")},
-            method = {"updateTrades"},
-            cancellable = true
+        at = @At("HEAD"),
+        method = "updateTrades",
+        cancellable = true
     )
     private void sellcraft$injectSellcraftTrades(CallbackInfo ci) {
         WanderingTrader $this = (WanderingTrader) (Object) this;
