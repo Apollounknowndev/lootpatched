@@ -1,15 +1,15 @@
-package dev.worldgen.datapatched.data.generator;
+package dev.worldgen.datapatched.data.overlay.generator;
 
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
-import dev.worldgen.datapatched.data.generator.offer.WanderingTraderOffers;
+import dev.worldgen.datapatched.data.overlay.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.ItemLike;
 
-public class TradeOfferDatagen {
+public class OverlayTradeOfferBootstrap {
     public static void bootstrap(BootstrapContext<TradeOffer> context) {
         WanderingTraderOffers.bootstrap(context);
     }

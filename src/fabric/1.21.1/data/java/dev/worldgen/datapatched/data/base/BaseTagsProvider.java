@@ -1,8 +1,8 @@
-package dev.worldgen.datapatched.data;
+package dev.worldgen.datapatched.data.base;
 
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
-import dev.worldgen.datapatched.data.generator.offer.WanderingTraderOffers;
+import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -11,8 +11,8 @@ import net.minecraft.tags.TagKey;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DatapatchedTagsProvider extends FabricTagProvider<TradeOffer> {
-    public DatapatchedTagsProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
+    public BaseTagsProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
         super(output, DatapatchedRegistries.TRADE_OFFER, registriesFuture);
     }
 

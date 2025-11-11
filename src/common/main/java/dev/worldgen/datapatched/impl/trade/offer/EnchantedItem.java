@@ -37,7 +37,7 @@ public record EnchantedItem(ItemCost buying, Optional<ItemCost> buyingSecondary,
         int level = random.nextIntBetweenInclusive(this.levels.minInclusive(), this.levels.maxInclusive());
         RegistryAccess registries = entity.registryAccess();
         Optional<HolderSet.Named<Enchantment>> optional = registries.lookupOrThrow(Registries.ENCHANTMENT).get(EnchantmentTags.ON_TRADED_EQUIPMENT);
-        ItemCost finalBuying = new ItemCost(this.buying.item().value(), this.buying.count() + level);
+        ItemCost finalBuying = new ItemCost(this.buying.item().value(), level);
         ItemStack finalSelling = EnchantmentHelper.enchantItem(random, this.selling.copy(), level, registries, optional);
         return new SimpleTradeOffer.ItemTrade(finalBuying, this.buyingSecondary, this.modifyStack(entity, finalSelling));
     }

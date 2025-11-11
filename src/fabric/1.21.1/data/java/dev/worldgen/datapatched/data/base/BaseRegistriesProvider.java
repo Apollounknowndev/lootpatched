@@ -1,4 +1,4 @@
-package dev.worldgen.datapatched.data;
+package dev.worldgen.datapatched.data.base;
 
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -7,9 +7,9 @@ import net.minecraft.core.HolderLookup;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DatapatchedRegistriesProvider extends FabricDynamicRegistryProvider {
-    public DatapatchedRegistriesProvider(FabricDataOutput dataOutput, CompletableFuture<HolderLookup.Provider> registriesFuture) {
-        super(dataOutput, registriesFuture);
+public class BaseRegistriesProvider extends FabricDynamicRegistryProvider {
+    public BaseRegistriesProvider(FabricDataOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override
@@ -20,6 +20,6 @@ public class DatapatchedRegistriesProvider extends FabricDynamicRegistryProvider
 
     @Override
     public String getName() {
-        return "Datapatched Registries";
+        return "Base registries";
     }
 }

@@ -1,8 +1,8 @@
-package dev.worldgen.datapatched.data.generator.offer;
+package dev.worldgen.datapatched.data.base.generator.offer;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.generator.TradeOfferDatagen;
+import dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Items;
@@ -90,13 +90,13 @@ public class WanderingTraderOffers {
     }
 
     private static void normal(BootstrapContext<TradeOffer> context, ItemLike item, int price, int count, int maxUses) {
-        var key = TradeOfferDatagen.key("wandering_trader/normal/buy_" + TradeOfferDatagen.itemPath(item));
+        var key = BaseTradeOfferBootstrap.key("wandering_trader/normal/buy_" + BaseTradeOfferBootstrap.itemPath(item));
         context.register(key, TradeOfferBuilder.itemsForEmeralds(item, price, count, maxUses));
         NORMAL_OFFERS.add(key);
     }
 
     private static void special(BootstrapContext<TradeOffer> context, ItemLike item, int price, int count, int maxUses) {
-        var key = TradeOfferDatagen.key("wandering_trader/special/buy_" + TradeOfferDatagen.itemPath(item));
+        var key = BaseTradeOfferBootstrap.key("wandering_trader/special/buy_" + BaseTradeOfferBootstrap.itemPath(item));
         context.register(key, TradeOfferBuilder.itemsForEmeralds(item, price, count, maxUses));
         SPECIAL_OFFERS.add(key);
     }

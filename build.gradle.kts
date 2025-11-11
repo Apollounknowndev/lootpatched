@@ -54,7 +54,7 @@ cloche {
 
         loaderVersion = "0.17.0"
         minecraftVersion = "1.21.1"
-        datagenDirectory = file("src/common/main")
+        datagenDirectory = file("build/generated/resources/main")
 
         dependencies {
             fabricApi("0.116.1")
@@ -73,7 +73,7 @@ cloche {
                 value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
             entrypoint("fabric-datagen") {
-                value = "dev.worldgen.datapatched.data.DatapatchedDatagen"
+                value = "dev.worldgen.datapatched.data.base.BaseDatapatchedDatagen"
             }
         }
     }
@@ -81,19 +81,21 @@ cloche {
     fabric("fabric:1.21.10") {
         dependsOn(shared12110)
 
-        loaderVersion = "0.17.2"
-        minecraftVersion = "1.21.9"
-        datagenDirectory = file("src/common/main/overlay")
+        loaderVersion = "0.17.3"
+        minecraftVersion = "1.21.10"
+        datagenDirectory = file("build/generated/resources/main")
 
         dependencies {
-            fabricApi("0.134.0")
+            fabricApi("0.138.0")
         }
 
         includedClient()
         runs {
             client()
             server()
-            data()
+            data {
+                mixins.from(file("src/fabric/1.21.10/data/datapatched_datagen.mixins.json"))
+            }
         }
         data()
 
@@ -102,7 +104,7 @@ cloche {
                 value = "dev.worldgen.datapatched.impl.DatapatchedEntrypoint"
             }
             entrypoint("fabric-datagen") {
-                value = "dev.worldgen.datapatched.data.DatapatchedDatagen"
+                value = "dev.worldgen.datapatched.data.overlay.OverlayDatapatchedDatagen"
             }
         }
     }
@@ -122,8 +124,8 @@ cloche {
     neoforge("neoforge:1.21.10") {
         dependsOn(shared12110)
 
-        loaderVersion = "21.9.1-beta"
-        minecraftVersion = "1.21.9"
+        loaderVersion = "21.10.49-beta"
+        minecraftVersion = "1.21.10"
 
         runs {
             client()

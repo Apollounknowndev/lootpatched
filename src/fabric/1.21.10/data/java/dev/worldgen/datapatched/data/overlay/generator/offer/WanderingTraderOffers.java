@@ -1,23 +1,25 @@
-package dev.worldgen.datapatched.data.generator.offer;
+package dev.worldgen.datapatched.data.overlay.generator.offer;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.generator.TradeOfferDatagen;
+import dev.worldgen.datapatched.data.overlay.generator.OverlayTradeOfferBootstrap;
 import dev.worldgen.datapatched.impl.trade.offer.Empty;
-import net.minecraft.client.color.item.Potion;
+import dev.worldgen.datapatched.impl.trade.offer.EnchantedItem;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.InclusiveRange;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.trading.ItemCost;
 import net.minecraft.world.level.ItemLike;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
-import static dev.worldgen.datapatched.data.generator.TradeOfferDatagen.key;
+import static dev.worldgen.datapatched.data.overlay.generator.OverlayTradeOfferBootstrap.key;
 
 public class WanderingTraderOffers {
     public static final List<ResourceKey<TradeOffer>> NORMAL_OVERLAY_OFFERS = new ArrayList<>();
@@ -45,10 +47,23 @@ public class WanderingTraderOffers {
         special(context, Items.PALE_OAK_LOG, 1, 8, 4, true);
         special(context, Items.SPRUCE_LOG, 1, 8, 4, true);
         special(context, PotionContents.createItemStack(Items.POTION, Potions.LONG_INVISIBILITY), 5, 1, 1, true);
+
+        var enchantedKey = baseKey("special/buy_enchanted_", Items.IRON_PICKAXE);
+        context.register(enchantedKey, new EnchantedItem(
+            new ItemCost(Items.EMERALD),
+            Optional.empty(),
+            Items.IRON_PICKAXE.getDefaultInstance(),
+            Optional.empty(),
+            new InclusiveRange<>(5, 19),
+            1,
+            1,
+            0.05f
+        ));
+        SPECIAL_OVERLAY_OFFERS.add(enchantedKey);
     }
 
     private static void normal(BootstrapContext<TradeOffer> context, ItemLike item, int buyingCount, int sellingCount, int maxUses, boolean addToTag) {
-        var key = key("wandering_trader/normal/buy_" + TradeOfferDatagen.itemPath(item));
+        var key = baseKey("normal/buy_", item);
         context.register(key, TradeOfferBuilder.itemsForEmeralds(item, buyingCount, sellingCount, maxUses));
         if (addToTag) NORMAL_OVERLAY_OFFERS.add(key);
     }
@@ -58,8 +73,12 @@ public class WanderingTraderOffers {
     }
 
     private static void special(BootstrapContext<TradeOffer> context, ItemStack stack, int buyingCount, int sellingCount, int maxUses, boolean addToTag) {
-        var key = key("wandering_trader/special/buy_" + TradeOfferDatagen.itemPath(stack.getItem()));
+        var key = baseKey("special/buy_", stack.getItem());
         context.register(key, TradeOfferBuilder.itemsForEmeralds(stack, buyingCount, sellingCount, maxUses));
         if (addToTag) SPECIAL_OVERLAY_OFFERS.add(key);
+    }
+
+    private static ResourceKey<TradeOffer> baseKey(String prefix, ItemLike item) {
+        return key("wandering_trader/" + prefix + OverlayTradeOfferBootstrap.itemPath(item));
     }
 }

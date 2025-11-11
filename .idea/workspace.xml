@@ -4,22 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Almost lost hours of progress, no taking chances again">
+    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Some more fixes">
+      <change afterPath="$PROJECT_DIR$/src/common/main/resources/pack.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseTagsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/datapatched_datagen.mixins.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/mixin/HashCacheMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayDatapatchedDatagen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/data/mixin/HashCacheMixin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/loot/LootModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/loot/LootModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/SimpleTradeOffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/SimpleTradeOffer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/DiscardFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/DiscardFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/ItemSwapFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/function/ItemSwapFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddEntries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddEntries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddPools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/AddPools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/ApplyFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/ApplyFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/CommonData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/loot/modifier/CommonData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Condition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Condition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/TradeHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/TradeHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/EnchantedItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/impl/trade/offer/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseDatapatchedDatagen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseRegistriesProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferProviderBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/WanderingTraderOffers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedDatagen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedRegistriesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayRegistriesProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/DatapatchedTagsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayTagsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/TradeOfferProviderDatagen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferProviderBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/offer/WanderingTraderOffers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +62,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,35 +92,77 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotClient.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotServer.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [:net.fabricmc.loader.impl.launch.knot.KnotServer.main()].executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.lootpatched [prepareDatagenDataRun].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.lootpatched [prepareFabric12110ClientRun].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.lootpatched [prepareFabric12110DataRun].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.lootpatched [prepareFabric1211ClientRun].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.lootpatched [prepareFabric1211DataRun].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;external.system.has.shared.sources&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldglo/Documents/Github/lootpatched/src/common/main/java/dev/worldgen/datapatched/impl/loot&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ldglo/Documents/Github/lootpatched/src/fabric/1.21.10/main/java/dev/worldgen/datapatched/data&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main\java\dev\worldgen\datapatched\impl\loot" />
-      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main\java\dev\worldgen\datapatched\api" />
-      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\common\main" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10\main\java\dev\worldgen\datapatched\data" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.1" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\datagen" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\datagen\data" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10\data\java\dev\worldgen\datapatched\data\base" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10\data" />
-      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\fabric\1.21.10\data\java" />
+      <recent name="C:\Users\ldglo\Documents\Github\lootpatched\src\datagen\data\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.worldgen.datapatched.data.overlay" />
       <recent name="dev.worldgen.datapatched.impl.trade.offer" />
       <recent name="dev.worldgen.datapatched.impl.loot.modifier" />
       <recent name="dev.worldgen.datapatched.impl.loot.function" />
       <recent name="dev.worldgen.datapatched.mixin.trade" />
-      <recent name="dev.worldgen.datapatched.mixin.loot" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Run :fabric:1.21.10:data">
+  <component name="RunManager" selected="Application.Run :fabric:1.21.10:client">
+    <configuration name="Run :datagen:client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotClient" />
+      <module name="datapatched.datagen" />
+      <option name="PROGRAM_PARAMETERS" value="--assetsDir=C:\Users\ldglo\.gradle\caches\minecraft-codev\assets --assetIndex=27" />
+      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\datagen;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\datagen;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\datagen -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeDatagenRemapClasspath\classpath.txt -Djava.library.path=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\extractDatagenNatives -Dorg.lwjgl.librarypath=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\extractDatagenNatives" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareDatagenClientRun" externalProjectPath="$PROJECT_DIR$" />
+      </method>
+    </configuration>
+    <configuration name="Run :datagen:data" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotServer" />
+      <module name="datapatched.datagenData" />
+      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\datagenData;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\datagenData;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\datagenData;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\datagen;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\datagen -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeDatagenRemapClasspath\classpath.txt -Dfabric-api.datagen -Dfabric-api.datagen.output-dir=C:\Users\ldglo\Documents\Github\lootpatched\build\generated\resources\main -Dfabric-api.datagen.modid=datapatched" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareDatagenDataRun" externalProjectPath="$PROJECT_DIR$" />
+      </method>
+    </configuration>
+    <configuration name="Run :datagen:server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotServer" />
+      <module name="datapatched.datagen" />
+      <option name="PROGRAM_PARAMETERS" value="nogui" />
+      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\datagen;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\datagen;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\datagen -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeDatagenRemapClasspath\classpath.txt" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Gradle.BeforeRunTask" enabled="true" tasks="prepareDatagenServerRun" externalProjectPath="$PROJECT_DIR$" />
+      </method>
+    </configuration>
     <configuration name="Run :fabric:1.21.10:client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotClient" />
       <module name="datapatched.fabric12110" />
@@ -128,7 +177,7 @@
     <configuration name="Run :fabric:1.21.10:data" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotServer" />
       <module name="datapatched.fabric12110Data" />
-      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric12110;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric12110 -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeFabric12110RemapClasspath\classpath.txt -Dfabric-api.datagen -Dfabric-api.datagen.output-dir=C:\Users\ldglo\Documents\Github\lootpatched\src\common\main\overlay -Dfabric-api.datagen.modid=datapatched" />
+      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\fabric12110Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric12110;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric12110 -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeFabric12110RemapClasspath\classpath.txt -Dfabric-api.datagen -Dfabric-api.datagen.output-dir=C:\Users\ldglo\Documents\Github\lootpatched\build\generated\resources\main -Dfabric-api.datagen.modid=datapatched" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,7 +209,7 @@
     <configuration name="Run :fabric:1.21.1:data" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotServer" />
       <module name="datapatched.fabric1211Data" />
-      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric1211;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric1211 -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeFabric1211RemapClasspath\classpath.txt -Dfabric-api.datagen -Dfabric-api.datagen.output-dir=C:\Users\ldglo\Documents\Github\lootpatched\src\common\main -Dfabric-api.datagen.modid=datapatched" />
+      <option name="VM_PARAMETERS" value="-Dfabric.development=true -Dmixin.env.remapRefMap=true -Dfabric.classPathGroups=C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\resources\fabric1211Data;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\java\fabric1211;C:\Users\ldglo\Documents\Github\lootpatched\build\classes\kotlin\fabric1211 -Dfabric.remapClasspathFile=C:\Users\ldglo\Documents\Github\lootpatched\build\tmp\writeFabric1211RemapClasspath\classpath.txt -Dfabric-api.datagen -Dfabric-api.datagen.output-dir=C:\Users\ldglo\Documents\Github\lootpatched\build\generated\resources\main -Dfabric-api.datagen.modid=datapatched" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -184,7 +233,7 @@
       </envs>
       <option name="MAIN_CLASS_NAME" value="net.neoforged.fml.startup.Client" />
       <module name="datapatched.neoforge12110" />
-      <option name="PROGRAM_PARAMETERS" value="--version 21.9.1-beta --assetIndex 27 --assetsDir C:\Users\ldglo\.gradle\caches\minecraft-codev\assets --fml.mcVersion 1.21.9 --fml.neoForgeVersion 21.9.1-beta --fml.neoFormVersion 20250930.151910" />
+      <option name="PROGRAM_PARAMETERS" value="--version 21.10.49-beta --assetIndex 27 --assetsDir C:\Users\ldglo\.gradle\caches\minecraft-codev\assets --fml.mcVersion 1.21.10 --fml.neoForgeVersion 21.10.49-beta --fml.neoFormVersion 20251010.172816" />
       <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -Djava.net.preferIPv6Addresses=system -Dneoforge.enableGameTest=true" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">
@@ -198,7 +247,7 @@
       </envs>
       <option name="MAIN_CLASS_NAME" value="net.neoforged.fml.startup.Server" />
       <module name="datapatched.neoforge12110" />
-      <option name="PROGRAM_PARAMETERS" value="--fml.mcVersion 1.21.9 --fml.neoForgeVersion 21.9.1-beta --fml.neoFormVersion 20250930.151910" />
+      <option name="PROGRAM_PARAMETERS" value="--fml.mcVersion 1.21.10 --fml.neoForgeVersion 21.10.49-beta --fml.neoFormVersion 20251010.172816" />
       <option name="VM_PARAMETERS" value="--add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -Djava.net.preferIPv6Addresses=system" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <method v="2">

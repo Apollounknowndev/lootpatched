@@ -1,7 +1,6 @@
 package dev.worldgen.datapatched.impl.trade;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
-import dev.worldgen.datapatched.impl.Datapatched;
 import dev.worldgen.datapatched.impl.trade.provider.TradeOfferProvider;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,16 +14,9 @@ import net.minecraft.world.item.trading.MerchantOffers;
 import net.msrandom.multiplatform.annotations.Expect;
 
 public class TradeHelper {
-    public TradeHelper() {
-    }
-
     public static void addDatapatchedTrades(AbstractVillager entity, MerchantOffers tradeOfferList, TradeOfferProvider.TradeTier tradeTier) {
-        int count = tradeTier.count();
         HolderSet<TradeOffer> tradeSet = tradeTier.trades();
-        if (count > tradeSet.size()) {
-            Datapatched.LOGGER.error("Trade tier has less trades than needed! Expected at least {}, got {}", count, tradeSet.size());
-            count = tradeSet.size();
-        }
+        int count = Math.min(tradeTier.count(), tradeSet.size());
 
         ArrayList<TradeOffer> trades = new ArrayList<>(tradeSet.stream().map(Holder::value).toList());
         int i = 0;
