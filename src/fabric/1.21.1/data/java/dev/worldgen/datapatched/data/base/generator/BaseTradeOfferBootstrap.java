@@ -2,6 +2,7 @@ package dev.worldgen.datapatched.data.base.generator;
 
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
+import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
 import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,6 +17,12 @@ public class BaseTradeOfferBootstrap {
 
     public static ResourceKey<TradeOffer> key(String name) {
         return ResourceKey.create(DatapatchedRegistries.TRADE_OFFER, Datapatched.id(name));
+    }
+
+    public static ResourceKey<TradeOffer> register(BootstrapContext<TradeOffer> context, String name, TradeOffer offer) {
+        var key = key(name);
+        context.register(key, offer);
+        return key;
     }
 
     public static String itemPath(ItemLike item) {

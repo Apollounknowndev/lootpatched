@@ -18,6 +18,12 @@ public class OverlayTradeOfferBootstrap {
         return ResourceKey.create(DatapatchedRegistries.TRADE_OFFER, Datapatched.id(name));
     }
 
+    public static ResourceKey<TradeOffer> register(BootstrapContext<TradeOffer> context, String name, TradeOffer offer) {
+        var key = key(name);
+        context.register(key, offer);
+        return key;
+    }
+
     public static String itemPath(ItemLike item) {
         return BuiltInRegistries.ITEM.getKey(item.asItem()).getPath();
     }

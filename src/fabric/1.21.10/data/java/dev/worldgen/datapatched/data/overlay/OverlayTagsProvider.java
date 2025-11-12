@@ -20,7 +20,7 @@ public class OverlayTagsProvider extends FabricTagProvider<TradeOffer> {
     protected void addTags(HolderLookup.Provider provider) {
         builder(key("wandering_trader/normal_overlay")).addAll(WanderingTraderOffers.NORMAL_OVERLAY_OFFERS);
         builder(key("wandering_trader/special_overlay")).addAll(WanderingTraderOffers.SPECIAL_OVERLAY_OFFERS);
-        builder(key("wandering_trader/buying"));
+        builder(key("wandering_trader/buying")).addAll(WanderingTraderOffers.BUYING_OFFERS);
     }
 
     public static TagKey<TradeOffer> key(String name) {

@@ -90,13 +90,13 @@ public class WanderingTraderOffers {
     }
 
     private static void normal(BootstrapContext<TradeOffer> context, ItemLike item, int price, int count, int maxUses) {
-        var key = BaseTradeOfferBootstrap.key("wandering_trader/normal/buy_" + BaseTradeOfferBootstrap.itemPath(item));
+        var key = BaseTradeOfferBootstrap.key("wandering_trader/normal/sell_" + BaseTradeOfferBootstrap.itemPath(item));
         context.register(key, TradeOfferBuilder.itemsForEmeralds(item, price, count, maxUses));
         NORMAL_OFFERS.add(key);
     }
 
     private static void special(BootstrapContext<TradeOffer> context, ItemLike item, int price, int count, int maxUses) {
-        var key = BaseTradeOfferBootstrap.key("wandering_trader/special/buy_" + BaseTradeOfferBootstrap.itemPath(item));
+        var key = BaseTradeOfferBootstrap.key("wandering_trader/special/sell_" + BaseTradeOfferBootstrap.itemPath(item));
         context.register(key, TradeOfferBuilder.itemsForEmeralds(item, price, count, maxUses));
         SPECIAL_OFFERS.add(key);
     }
