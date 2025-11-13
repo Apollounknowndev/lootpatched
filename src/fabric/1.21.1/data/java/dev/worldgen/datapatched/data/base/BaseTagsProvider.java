@@ -5,6 +5,7 @@ import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
 import dev.worldgen.datapatched.data.base.generator.offer.FarmerOffers;
 import dev.worldgen.datapatched.data.base.generator.offer.FishermanOffers;
+import dev.worldgen.datapatched.data.base.generator.offer.ShepherdOffers;
 import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -14,7 +15,6 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.TagKey;
 
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
@@ -31,6 +31,7 @@ public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
 
         base("farmer", FarmerOffers.OFFERS);
         base("fisherman", FishermanOffers.OFFERS);
+        base("shepherd", ShepherdOffers.OFFERS);
     }
 
     private void base(String profession, List<List<ResourceKey<TradeOffer>>> offers) {
