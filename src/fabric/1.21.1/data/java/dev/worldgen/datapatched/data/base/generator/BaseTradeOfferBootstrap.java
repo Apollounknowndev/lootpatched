@@ -3,6 +3,7 @@ package dev.worldgen.datapatched.data.base.generator;
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
+import dev.worldgen.datapatched.data.base.generator.offer.FarmerOffers;
 import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.ItemLike;
 public class BaseTradeOfferBootstrap {
     public static void bootstrap(BootstrapContext<TradeOffer> context) {
         WanderingTraderOffers.bootstrap(context);
+        FarmerOffers.bootstrap(context);
     }
 
     public static ResourceKey<TradeOffer> key(String name) {

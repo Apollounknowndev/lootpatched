@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Fix mixin formatting">
-      <change afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/FarmerOffers.java" afterDir="false" />
+    <list default="true" id="fe28feff-e22b-494a-ae5d-d85e05a48c48" name="Changes" comment="Flip buy/sell, finish wandering traders, prep farmers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/main/java/dev/worldgen/datapatched/api/trade/TradeOfferBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseTagsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/BaseTagsProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/WanderingTraderOffers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayTagsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/OverlayTagsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/OverlayTradeOfferBootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/offer/WanderingTraderOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.10/data/java/dev/worldgen/datapatched/data/overlay/generator/offer/WanderingTraderOffers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferProviderBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/BaseTradeOfferProviderBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/FarmerOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fabric/1.21.1/data/java/dev/worldgen/datapatched/data/base/generator/offer/FarmerOffers.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <recent name="dev.worldgen.datapatched.impl.loot.function" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Run :fabric:1.21.10:data">
+  <component name="RunManager" selected="Application.Run :fabric:1.21.10:client">
     <configuration name="Run :datagen:client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.fabricmc.loader.impl.launch.knot.KnotClient" />
       <module name="datapatched.datagen" />
@@ -319,13 +317,22 @@
       <option name="project" value="LOCAL" />
       <updated>1762900519678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Flip buy/sell, finish wandering traders, prep farmers">
+      <option name="closed" value="true" />
+      <created>1762933430373</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1762933430373</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Almost lost hours of progress, no taking chances again" />
     <MESSAGE value="Wandering traders data-driven" />
     <MESSAGE value="Fix mixin formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix mixin formatting" />
+    <MESSAGE value="Flip buy/sell, finish wandering traders, prep farmers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flip buy/sell, finish wandering traders, prep farmers" />
   </component>
 </project>

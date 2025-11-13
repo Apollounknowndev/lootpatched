@@ -17,6 +17,18 @@ public class BaseTradeOfferProviderBootstrap {
             new TradeOfferProvider.TradeTier(5, tag(context, "wandering_trader/normal")),
             new TradeOfferProvider.TradeTier(1, tag(context, "wandering_trader/special"))
         )));
+
+        base(context, "farmer");
+    }
+
+    private static void base(BootstrapContext<TradeOfferProvider> context, String name) {
+        context.register(key(name), new TradeOfferProvider(List.of(
+            new TradeOfferProvider.TradeTier(2, tag(context, name + "/novice")),
+            new TradeOfferProvider.TradeTier(2, tag(context, name + "/apprentice")),
+            new TradeOfferProvider.TradeTier(2, tag(context, name + "/journeyman")),
+            new TradeOfferProvider.TradeTier(2, tag(context, name + "/expert")),
+            new TradeOfferProvider.TradeTier(2, tag(context, name + "/master"))
+        )));
     }
 
     private static HolderSet<TradeOffer> tag(BootstrapContext<TradeOfferProvider> context, String name) {
