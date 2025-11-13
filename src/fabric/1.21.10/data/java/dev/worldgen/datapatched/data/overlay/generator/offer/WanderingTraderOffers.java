@@ -51,16 +51,7 @@ public class WanderingTraderOffers {
         special(context, PotionContents.createItemStack(Items.POTION, Potions.LONG_INVISIBILITY), 5, 1, 1, true);
 
         var enchantedKey = baseKey("special/sell_enchanted_", Items.IRON_PICKAXE);
-        context.register(enchantedKey, new EnchantedItem(
-            new ItemCost(Items.EMERALD),
-            Optional.empty(),
-            Items.IRON_PICKAXE.getDefaultInstance(),
-            Optional.empty(),
-            new InclusiveRange<>(5, 19),
-            1,
-            1,
-            0.05f
-        ));
+        context.register(enchantedKey, new EnchantedItem(new ItemCost(Items.EMERALD), Items.IRON_PICKAXE, 1, 1, 0.05f));
         SPECIAL_OVERLAY_OFFERS.add(enchantedKey);
 
         buying(context, new ItemCost(Items.POTION).withComponents(builder -> builder.expect(DataComponents.POTION_CONTENTS, new PotionContents(Potions.WATER))), 1, 2);

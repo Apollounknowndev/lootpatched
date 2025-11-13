@@ -19,6 +19,7 @@ public class BaseTradeOfferProviderBootstrap {
         )));
 
         base(context, "farmer");
+        base(context, "fisherman");
     }
 
     private static void base(BootstrapContext<TradeOfferProvider> context, String name) {

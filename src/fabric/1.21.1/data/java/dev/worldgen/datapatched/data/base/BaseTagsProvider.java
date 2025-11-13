@@ -4,6 +4,7 @@ import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
 import dev.worldgen.datapatched.data.base.generator.offer.FarmerOffers;
+import dev.worldgen.datapatched.data.base.generator.offer.FishermanOffers;
 import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -29,6 +30,7 @@ public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
         tag(key("wandering_trader/special_overlay"));
 
         base("farmer", FarmerOffers.OFFERS);
+        base("fisherman", FishermanOffers.OFFERS);
     }
 
     private void base(String profession, List<List<ResourceKey<TradeOffer>>> offers) {
