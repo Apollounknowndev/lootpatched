@@ -13,6 +13,7 @@ import net.minecraft.world.level.ItemLike;
 
 public class BaseTradeOfferBootstrap {
     public static void bootstrap(BootstrapContext<TradeOffer> context) {
+        CartographerOffers.bootstrap(context);
         FarmerOffers.bootstrap(context);
         FishermanOffers.bootstrap(context);
         FletcherOffers.bootstrap(context);

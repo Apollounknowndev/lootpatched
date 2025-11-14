@@ -64,10 +64,6 @@ public class TradeOfferBuilder {
 
     @SafeVarargs
     public static TradeOffer typeSpecific(TradeOffer offer, ResourceKey<VillagerType>... types) {
-        Map<ResourceKey<VillagerType>, Holder<TradeOffer>> trades = new HashMap<>();
-        for (ResourceKey<VillagerType> type : types) {
-            trades.put(type, Holder.direct(offer));
-        }
-        return new TypeSpecific(trades, TradeOffer.EMPTY);
+        return new TypeSpecific(TypeSpecific.entry(offer, types));
     }
 }

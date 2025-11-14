@@ -29,7 +29,7 @@ public record TradeOfferProvider(List<TradeTier> tiers) {
     public record TradeTier(int count, HolderSet<TradeOffer> trades) {
         public static final Codec<TradeTier> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             ExtraCodecs.NON_NEGATIVE_INT.fieldOf("count").forGetter(TradeTier::count),
-            TradeOffer.LIST_CODEC.fieldOf("trades").forGetter(TradeTier::trades)
+            TradeOffer.LIST_CODEC.fieldOf("entries").forGetter(TradeTier::trades)
         ).apply(instance, TradeTier::new));
     }
 }

@@ -18,6 +18,7 @@ public class BaseTradeOfferProviderBootstrap {
             new TradeOfferProvider.TradeTier(1, tag(context, "wandering_trader/special"))
         )));
 
+        base(context, "cartographer");
         base(context, "farmer");
         base(context, "fisherman");
         base(context, "fletcher");

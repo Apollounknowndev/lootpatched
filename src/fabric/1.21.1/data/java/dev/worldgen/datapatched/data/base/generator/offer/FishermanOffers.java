@@ -40,20 +40,18 @@ public class FishermanOffers {
         ));
         OFFERS.add(List.of(
             register(context, name(5, "buy_pufferfish"), TradeOfferBuilder.emeraldsForItems(Items.PUFFERFISH, 4, 12, 30)),
-            register(context, name(5, "sell_boat"), new TypeSpecific(Map.of(
-                VillagerKeys.PLAINS, boat(Items.OAK_BOAT),
-                VillagerKeys.TAIGA, boat(Items.SPRUCE_BOAT),
-                VillagerKeys.SNOW, boat(Items.SPRUCE_BOAT),
-                VillagerKeys.DESERT, boat(Items.JUNGLE_BOAT),
-                VillagerKeys.JUNGLE, boat(Items.JUNGLE_BOAT),
-                VillagerKeys.SAVANNA, boat(Items.ACACIA_BOAT),
-                VillagerKeys.SWAMP, boat(Items.DARK_OAK_BOAT)
-            )))
+            register(context, name(5, "sell_boat"), new TypeSpecific(
+                TypeSpecific.entry(boat(Items.OAK_BOAT), VillagerKeys.PLAINS),
+                TypeSpecific.entry(boat(Items.SPRUCE_BOAT), VillagerKeys.TAIGA, VillagerKeys.SNOW),
+                TypeSpecific.entry(boat(Items.JUNGLE_BOAT), VillagerKeys.DESERT, VillagerKeys.JUNGLE),
+                TypeSpecific.entry(boat(Items.ACACIA_BOAT), VillagerKeys.SAVANNA),
+                TypeSpecific.entry(boat(Items.DARK_OAK_BOAT), VillagerKeys.SWAMP)
+            ))
         ));
     }
 
-    private static Holder<TradeOffer> boat(ItemLike item) {
-        return Holder.direct(TradeOfferBuilder.emeraldsForItems(item, 1, 12, 30));
+    private static TradeOffer boat(ItemLike item) {
+        return TradeOfferBuilder.emeraldsForItems(item, 1, 12, 30);
     }
 
     private static String name(int level, String name) {

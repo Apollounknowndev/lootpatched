@@ -27,6 +27,7 @@ public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
         tag(key("wandering_trader/special_overlay"));
         tag(key("fletcher/tipped_arrow")).addAll(FletcherOffers.TIPPED_ARROWS);
 
+        base("cartographer", CartographerOffers.OFFERS);
         base("farmer", FarmerOffers.OFFERS);
         base("fisherman", FishermanOffers.OFFERS);
         base("fletcher", FletcherOffers.OFFERS);
