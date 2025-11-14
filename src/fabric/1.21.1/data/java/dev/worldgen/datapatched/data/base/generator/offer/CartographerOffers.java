@@ -21,7 +21,6 @@ import net.minecraft.world.level.storage.loot.functions.SetNameFunction;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import static dev.worldgen.datapatched.api.trade.TradeOfferBuilder.*;

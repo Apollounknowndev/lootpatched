@@ -2,9 +2,7 @@ package dev.worldgen.datapatched.data.base.generator.offer;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap;
 import net.minecraft.core.Holder;
-import net.minecraft.core.HolderSet;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -13,12 +11,9 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.SuspiciousStewEffects;
-import net.minecraft.world.level.ItemLike;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap.register;
 

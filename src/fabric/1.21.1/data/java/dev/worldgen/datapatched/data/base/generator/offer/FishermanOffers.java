@@ -4,7 +4,6 @@ import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
 import dev.worldgen.datapatched.impl.VillagerKeys;
 import dev.worldgen.datapatched.impl.trade.offer.TypeSpecific;
-import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Items;
@@ -12,7 +11,6 @@ import net.minecraft.world.level.ItemLike;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import static dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap.register;
 

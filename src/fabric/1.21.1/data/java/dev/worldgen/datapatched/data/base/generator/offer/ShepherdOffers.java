@@ -2,15 +2,9 @@ package dev.worldgen.datapatched.data.base.generator.offer;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap;
-import dev.worldgen.datapatched.impl.VillagerKeys;
-import dev.worldgen.datapatched.impl.trade.offer.EnchantedItem;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.entity.npc.VillagerType;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.trading.ItemCost;
 
 import java.util.ArrayList;
 import java.util.List;

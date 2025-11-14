@@ -2,13 +2,11 @@ package dev.worldgen.datapatched.data.base.generator;
 
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
-import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
 import dev.worldgen.datapatched.data.base.generator.offer.*;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 
 public class BaseTradeOfferBootstrap {
