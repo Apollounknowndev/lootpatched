@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import dev.worldgen.datapatched.impl.trade.offer.EnchantedItem;
 import dev.worldgen.datapatched.impl.trade.offer.TypeSpecific;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceKey;
@@ -54,6 +55,10 @@ public class TradeOfferBuilder {
 
     public static TradeOffer emeraldsForItems(ItemCost buying, int emeraldCount, int maxUses, int xp) {
         return new Base(buying, Optional.empty(), new ItemStack(Items.EMERALD, emeraldCount), Optional.empty(), maxUses, xp, 0.05F);
+    }
+
+    public static TradeOffer enchantedItem(ItemLike selling, int emeraldCount, int maxUses, int xp, float priceMultiplier) {
+        return new EnchantedItem(new ItemCost(Items.EMERALD, emeraldCount), selling, maxUses, xp, priceMultiplier);
     }
 
     @SafeVarargs

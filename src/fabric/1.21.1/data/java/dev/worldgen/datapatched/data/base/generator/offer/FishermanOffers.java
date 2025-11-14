@@ -34,7 +34,7 @@ public class FishermanOffers {
         ));
         OFFERS.add(List.of(
             register(context, name(3, "buy_salmon"), TradeOfferBuilder.emeraldsForItems(Items.SALMON, 13, 16, 10)),
-            register(context, name(3, "buy_enchanted_fishing_rod"), new EnchantedItem(new ItemCost(Items.EMERALD, 3), Items.FISHING_ROD, 3, 10, 0.2f))
+            register(context, name(3, "buy_enchanted_fishing_rod"), TradeOfferBuilder.enchantedItem(Items.FISHING_ROD, 3, 3, 10, 0.2f))
         ));
         OFFERS.add(List.of(
             register(context, name(4, "buy_tropical_fish"), TradeOfferBuilder.emeraldsForItems(Items.TROPICAL_FISH, 6, 12, 30))

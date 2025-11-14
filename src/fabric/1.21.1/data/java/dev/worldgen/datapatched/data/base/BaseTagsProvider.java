@@ -3,10 +3,7 @@ package dev.worldgen.datapatched.data.base;
 import dev.worldgen.datapatched.api.DatapatchedRegistries;
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.base.generator.offer.FarmerOffers;
-import dev.worldgen.datapatched.data.base.generator.offer.FishermanOffers;
-import dev.worldgen.datapatched.data.base.generator.offer.ShepherdOffers;
-import dev.worldgen.datapatched.data.base.generator.offer.WanderingTraderOffers;
+import dev.worldgen.datapatched.data.base.generator.offer.*;
 import dev.worldgen.datapatched.impl.Datapatched;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -28,9 +25,11 @@ public class BaseTagsProvider extends FabricTagProvider<TradeOffer> {
         tag(key("wandering_trader/special")).addTag(key("wandering_trader/special_overlay")).addAll(WanderingTraderOffers.SPECIAL_OFFERS);
         tag(key("wandering_trader/normal_overlay"));
         tag(key("wandering_trader/special_overlay"));
+        tag(key("fletcher/tipped_arrow")).addAll(FletcherOffers.TIPPED_ARROWS);
 
         base("farmer", FarmerOffers.OFFERS);
         base("fisherman", FishermanOffers.OFFERS);
+        base("fletcher", FletcherOffers.OFFERS);
         base("shepherd", ShepherdOffers.OFFERS);
     }
 
