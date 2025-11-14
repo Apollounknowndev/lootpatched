@@ -2,6 +2,7 @@ package dev.worldgen.datapatched.api.trade;
 
 import dev.worldgen.datapatched.impl.trade.offer.Base;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -63,6 +64,10 @@ public class TradeOfferBuilder {
 
     @SafeVarargs
     public static TradeOffer typeSpecific(TradeOffer offer, ResourceKey<VillagerType>... types) {
-        return new TypeSpecific(List.of(types), Holder.direct(offer), TradeOffer.EMPTY);
+        Map<ResourceKey<VillagerType>, Holder<TradeOffer>> trades = new HashMap<>();
+        for (ResourceKey<VillagerType> type : types) {
+            trades.put(type, Holder.direct(offer));
+        }
+        return new TypeSpecific(trades, TradeOffer.EMPTY);
     }
 }

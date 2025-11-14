@@ -2,18 +2,17 @@ package dev.worldgen.datapatched.data.base.generator.offer;
 
 import dev.worldgen.datapatched.api.trade.TradeOffer;
 import dev.worldgen.datapatched.api.trade.TradeOfferBuilder;
-import dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap;
 import dev.worldgen.datapatched.impl.VillagerKeys;
-import dev.worldgen.datapatched.impl.trade.offer.EnchantedItem;
+import dev.worldgen.datapatched.impl.trade.offer.TypeSpecific;
+import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.entity.npc.VillagerType;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.trading.ItemCost;
+import net.minecraft.world.level.ItemLike;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static dev.worldgen.datapatched.data.base.generator.BaseTradeOfferBootstrap.register;
 
@@ -41,21 +40,20 @@ public class FishermanOffers {
         ));
         OFFERS.add(List.of(
             register(context, name(5, "buy_pufferfish"), TradeOfferBuilder.emeraldsForItems(Items.PUFFERFISH, 4, 12, 30)),
-            boat(context, Items.OAK_BOAT, VillagerKeys.PLAINS),
-            boat(context, Items.SPRUCE_BOAT,  VillagerKeys.TAIGA, VillagerKeys.SNOW),
-            boat(context, Items.JUNGLE_BOAT, VillagerKeys.DESERT, VillagerKeys.JUNGLE),
-            boat(context, Items.ACACIA_BOAT, VillagerKeys.SAVANNA),
-            boat(context, Items.DARK_OAK_BOAT, VillagerKeys.SWAMP)
+            register(context, name(5, "sell_boat"), new TypeSpecific(Map.of(
+                VillagerKeys.PLAINS, boat(Items.OAK_BOAT),
+                VillagerKeys.TAIGA, boat(Items.SPRUCE_BOAT),
+                VillagerKeys.SNOW, boat(Items.SPRUCE_BOAT),
+                VillagerKeys.DESERT, boat(Items.JUNGLE_BOAT),
+                VillagerKeys.JUNGLE, boat(Items.JUNGLE_BOAT),
+                VillagerKeys.SAVANNA, boat(Items.ACACIA_BOAT),
+                VillagerKeys.SWAMP, boat(Items.DARK_OAK_BOAT)
+            )))
         ));
     }
 
-    @SafeVarargs
-    private static ResourceKey<TradeOffer> boat(BootstrapContext<TradeOffer> context, Item item, ResourceKey<VillagerType>... types) {
-        return register(
-            context,
-            name(5, "sell_" + BaseTradeOfferBootstrap.itemPath(item)),
-            TradeOfferBuilder.typeSpecific(TradeOfferBuilder.emeraldsForItems(item, 1, 12, 30), types)
-        );
+    private static Holder<TradeOffer> boat(ItemLike item) {
+        return Holder.direct(TradeOfferBuilder.emeraldsForItems(item, 1, 12, 30));
     }
 
     private static String name(int level, String name) {
