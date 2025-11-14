@@ -21,6 +21,7 @@ public class BaseTradeOfferProviderBootstrap {
         base(context, "farmer");
         base(context, "fisherman");
         base(context, "fletcher");
+        base(context, "librarian");
         base(context, "shepherd");
     }
 

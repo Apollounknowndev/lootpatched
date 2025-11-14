@@ -16,6 +16,7 @@ public class BaseTradeOfferBootstrap {
         FarmerOffers.bootstrap(context);
         FishermanOffers.bootstrap(context);
         FletcherOffers.bootstrap(context);
+        LibrarianOffers.bootstrap(context);
         ShepherdOffers.bootstrap(context);
 
         WanderingTraderOffers.bootstrap(context);

@@ -36,7 +36,17 @@ public record EnchantedBook(Optional<ItemCost> buyingSecondary, HolderSet<Enchan
         } else {
             Holder<Enchantment> holder = optional.get();
             Enchantment enchantment = holder.value();
-            int level = random.nextIntBetweenInclusive(Math.max(this.minLevel, enchantment.getMinLevel()), Math.min(this.maxLevel, enchantment.getMaxLevel()));
+
+            int min = Math.max(this.minLevel, enchantment.getMinLevel());
+            int max = Math.min(this.maxLevel, enchantment.getMaxLevel());
+
+            int level;
+            if (min < max) {
+                level = random.nextIntBetweenInclusive(min, max);
+            } else {
+                level = min;
+            }
+
             ItemStack book = createBook(holder, level);
             int emeralds = 2 + random.nextInt(5 + level * 10) + 3 * level;
             if (holder.is(EnchantmentTags.DOUBLE_TRADE_PRICE)) {
